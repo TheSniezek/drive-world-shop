@@ -410,7 +410,7 @@ const SectionManager: React.FC = () => {
           <span>Site made by @v1sniezek on Discord</span>
           <span>
             If you want to support the project here's my kofi&nbsp;
-            <a href="https://ko-fi.com/thesniezek" target="blank" className="info-header-link">
+            <a href="https://ko-fi.com/Z8Z21P9ZG6" target="blank" className="info-header-link">
               TheSniezek
             </a>
           </span>
