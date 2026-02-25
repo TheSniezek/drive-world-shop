@@ -1,11 +1,10 @@
 .info-header {
   color: var(--font);
   font-size: 2rem;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   background-color: var(--main);
-  margin-bottom: -10px;
   gap: 10px;
   justify-content: center;
 
@@ -73,7 +72,7 @@
 
 .update-section {
   width: 100%;
-  background-color: var(--darkdetail);
+  background-color: var(--background);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +80,93 @@
   color: var(--font);
   font-size: 1.75rem;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px;
+  gap: 10px;
+
+  .update-title {
+    width: 50%;
+    padding: 10px;
+    background-color: var(--darkdetail);
+    border-radius: 20px 20px 0 0;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .update-updated-section {
+    display: flex;
+    gap: 5px;
+    width: calc(50% + 20px);
+
+    .update-updated {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: #5f31b4;
+    }
+
+    .section-tittle {
+      width: 75px;
+      flex-shrink: 0;
+    }
+
+    .count {
+      width: 75px;
+      flex-shrink: 0;
+    }
+  }
+  .update-added-section {
+    display: flex;
+    gap: 5px;
+    width: calc(50% + 20px);
+
+    .update-added {
+      padding: 10px;
+      background-color: #2e6b33;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-tittle {
+      width: 75px;
+      flex-shrink: 0;
+    }
+
+    .count {
+      width: 75px;
+      flex-shrink: 0;
+    }
+  }
+  .update-deleted-section {
+    display: flex;
+    gap: 5px;
+    width: calc(50% + 20px);
+
+    .update-deleted {
+      background-color: #8a2626;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right {
+      border-radius: 0 0 20px 0;
+    }
+
+    .left {
+      border-radius: 0 0 0 20px;
+    }
+
+    .section-tittle {
+      width: 75px;
+      flex-shrink: 0;
+    }
+
+    .count {
+      width: 75px;
+      flex-shrink: 0;
+    }
+  }
 }
 
 .sections-body {

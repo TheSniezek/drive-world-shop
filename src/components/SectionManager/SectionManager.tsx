@@ -126,26 +126,28 @@ const SectionManager: React.FC = () => {
         imageName === "'Rotary Evo'"
           ? '"Rotary Evo"'
           : imageName === "Insect 'Hubert'"
-          ? 'Insect "Hubert"'
-          : imageName === "B-127 'Bumblebee'"
-          ? 'B-127 "Bumblebee"'
-          : imageName === "D-16 'Megatron'"
-          ? 'D-16 "Megatron"'
-          : imageName === "Elita-1 'Elita'"
-          ? 'Elita-1 "Elita"'
-          : imageName === "Nightline S35 'Fury'"
-          ? 'Nightline S35 "Fury"'
-          : imageName === "Orion Pax 'Optimus Prime'"
-          ? 'Orion Pax "Optimus Prime"'
-          : imageName === 'KITE'
-          ? 'K.I.T.E'
-          : imageName === "LUX 800 'Morikawa'"
-          ? 'LUX 800 "Morikawa"'
-          : imageName === "Camo 'Medal Edition'"
-          ? 'Camo "Medal Edition"'
-          : imageName === "Camo 'elf Edition'"
-          ? 'Camo "e.l.f. Edition"'
-          : imageName;
+            ? 'Insect "Hubert"'
+            : imageName === "B-127 'Bumblebee'"
+              ? 'B-127 "Bumblebee"'
+              : imageName === "D-16 'Megatron'"
+                ? 'D-16 "Megatron"'
+                : imageName === "Elita-1 'Elita'"
+                  ? 'Elita-1 "Elita"'
+                  : imageName === "Nightline S35 'Fury'"
+                    ? 'Nightline S35 "Fury"'
+                    : imageName === "Orion Pax 'Optimus Prime'"
+                      ? 'Orion Pax "Optimus Prime"'
+                      : imageName === 'KITE'
+                        ? 'K.I.T.E'
+                        : imageName === "LUX 800 'Morikawa'"
+                          ? 'LUX 800 "Morikawa"'
+                          : imageName === "Camo 'Medal Edition'"
+                            ? 'Camo "Medal Edition"'
+                            : imageName === "Camo 'elf Edition'"
+                              ? 'Camo "e.l.f. Edition"'
+                              : imageName === "Cherry Stock 'Twitch Edition'"
+                                ? 'Cherry Stock "Twitch Edition"'
+                                : imageName;
       newSections[selectedSectionIndex].name = cleanedImageName;
 
       setSections(newSections);
@@ -158,7 +160,7 @@ const SectionManager: React.FC = () => {
   };
 
   const filteredImages = imageList.filter((image) =>
-    image.toLowerCase().includes(searchTerm.toLowerCase())
+    image.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
@@ -241,7 +243,7 @@ const SectionManager: React.FC = () => {
   const detailsRef = useRef<HTMLDivElement>(null);
 
   const handleAction = async (
-    action: 'screenshot' | 'copy' | 'slicedScreenshot' | 'copyFormattedText'
+    action: 'screenshot' | 'copy' | 'slicedScreenshot' | 'copyFormattedText',
   ) => {
     setIsEditing(false); // Set editing to false
 
@@ -300,7 +302,7 @@ const SectionManager: React.FC = () => {
             handleSerialChange={() => {}}
             isEditing={false}
           />,
-          sectionElement
+          sectionElement,
         );
 
         tempContainer.appendChild(sectionElement);
@@ -405,30 +407,46 @@ const SectionManager: React.FC = () => {
     <div>
       {isInfoVisible && (
         <div className="info-header">
+          <span>Site made by @v1sniezek on Discord</span>
           <span>
-            Site made by&nbsp;
-            <a href="https://x.com/TheSniezek" target="blank" className="info-header-link">
-              @TheSniezek
-            </a>
-          </span>
-          <span>
-            If you have some ideas or something you want to tell me here's my straw page&nbsp;
-            <a href="https://sniezek.straw.page/" target="blank" className="info-header-link">
-              Sniezek's Place
+            If you want to support the project here's my kofi&nbsp;
+            <a href="https://ko-fi.com/thesniezek" target="blank" className="info-header-link">
+              TheSniezek
             </a>
           </span>
         </div>
       )}
       {isUpdateVisible && (
         <div className="update-section">
-          <span>
-            November 29, 2025 - Update 92 - 'Count' Mako Evo ● Arisaka ● Camo "e.l.f. Edition" ●
-            Camo "Medal Edition" ● Chariot ● D55 RSI Turbo ● Edina Evo ● Edina Xtreme ● Femaris ●
-            Halo ● Kar Xtreme ● Lion Evo ● Manta Evo ● Manta ● Manta RS ● R299 GTR ● Ripper Rod ●
-            Trident Evo ● Vessel 'Optimal' ● Zen 230
-          </span>
-          <br />
-          <span>November 30, 2025 - Update 93 - Yasko 'Knight'</span>
+          <div className="update-title">February 24, 2026 - Update 94</div>
+          <div className="update-updated-section">
+            <div className="update-updated section-tittle">UPDATED</div>
+            <div className="update-updated">
+              Andromeda ● Arcane Evo ● Crescendo ● Fury ● Requiem ● Spectra ● Trident ● Trident
+              'Victory'
+            </div>
+            <div className="update-updated count">8 Cars</div>
+          </div>
+          <div className="update-added-section">
+            <div className="update-added section-tittle">ADDED</div>
+            <div className="update-added">
+              290 'Leviathan' ● Cherry Stock "Twitch Edition" ● Clover ● Clover Evo ● Costello RT
+              'Pace' ● Current Widebody ● Edina Prototype ● Hauler 'Fireworks' ● Hyacinth ● Modena
+              Evo ● Monarch ● R12X ● R12X Evo ● R299 ● Rasant 'Pace' ● Spectra Xtreme ● Super 3 ●
+              Tourer ● Vapore ● Vapore 'Patrol' ● Verona Xtreme ● Viper E11 ● Vulture Evo ● Widow
+              Evo ● Zen 280X
+            </div>
+            <div className="update-added count">25 Cars</div>
+          </div>
+          <div className="update-deleted-section">
+            <div className="update-deleted left section-tittle">DELETED</div>
+            <div className="update-deleted">
+              Trex Beast ● Beast ● Trex ● Stallion ● Stallion M ● Stallion M Race ● Stallion
+              Cabriolet ● Stallion Patrol ● Stallion350 ● Stallion500 ● Buck ● Buck Rally ● Focal RS
+              ● Rally RS
+            </div>
+            <div className="update-deleted right count">14 Cars</div>
+          </div>
         </div>
       )}
       <div className="toolbar-header">
