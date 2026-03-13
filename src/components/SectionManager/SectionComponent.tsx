@@ -76,6 +76,7 @@ const SectionComponent: React.FC<SectionProps> = ({
             section.name === 'R299 GTR' ||
             section.name === 'Clover' ||
             section.name === 'Clover Evo' ||
+            section.name === 'Oni' ||
             section.name === 'Sidewinder') &&
             (isEditing ? (
               <input

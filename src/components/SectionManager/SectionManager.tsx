@@ -418,27 +418,21 @@ const SectionManager: React.FC = () => {
       )}
       {isUpdateVisible && (
         <div className="update-section">
-          <div className="update-title">February 24, 2026 - Update 94</div>
-          <div className="update-updated-section">
+          <div className="update-title">March 13, 2026 - Update 95</div>
+          {/* <div className="update-updated-section">
             <div className="update-updated section-tittle">UPDATED</div>
             <div className="update-updated">
               Andromeda ● Arcane Evo ● Crescendo ● Fury ● Requiem ● Spectra ● Trident ● Trident
               'Victory'
             </div>
             <div className="update-updated count">8 Cars</div>
-          </div>
+          </div> */}
           <div className="update-added-section">
-            <div className="update-added section-tittle">ADDED</div>
-            <div className="update-added">
-              290 'Leviathan' ● Cherry Stock "Twitch Edition" ● Clover ● Clover Evo ● Costello RT
-              'Pace' ● Current Widebody ● Edina Prototype ● Hauler 'Fireworks' ● Hyacinth ● Modena
-              Evo ● Monarch ● R12X ● R12X Evo ● R299 ● Rasant 'Pace' ● Spectra Xtreme ● Super 3 ●
-              Tourer ● Vapore ● Vapore 'Patrol' ● Verona Xtreme ● Viper E11 ● Vulture Evo ● Widow
-              Evo ● Zen 280X
-            </div>
-            <div className="update-added count">25 Cars</div>
+            <div className="update-added section-tittle left">ADDED</div>
+            <div className="update-added">Cortanze Evo ● Oni</div>
+            <div className="update-added count right">2 Cars</div>
           </div>
-          <div className="update-deleted-section">
+          {/* <div className="update-deleted-section">
             <div className="update-deleted left section-tittle">DELETED</div>
             <div className="update-deleted">
               Trex Beast ● Beast ● Trex ● Stallion ● Stallion M ● Stallion M Race ● Stallion
@@ -446,7 +440,7 @@ const SectionManager: React.FC = () => {
               ● Rally RS
             </div>
             <div className="update-deleted right count">14 Cars</div>
-          </div>
+          </div> */}
         </div>
       )}
       <div className="toolbar-header">

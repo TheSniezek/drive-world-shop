@@ -102,6 +102,7 @@
       align-items: center;
       padding: 10px;
       background-color: #5f31b4;
+      width: 100%;
     }
 
     .section-tittle {
@@ -112,6 +113,14 @@
     .count {
       width: 75px;
       flex-shrink: 0;
+    }
+
+    .right {
+      border-radius: 0 0 20px 0;
+    }
+
+    .left {
+      border-radius: 0 0 0 20px;
     }
   }
   .update-added-section {
@@ -125,6 +134,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
     }
 
     .section-tittle {
@@ -135,6 +145,14 @@
     .count {
       width: 75px;
       flex-shrink: 0;
+    }
+
+    .right {
+      border-radius: 0 0 20px 0;
+    }
+
+    .left {
+      border-radius: 0 0 0 20px;
     }
   }
   .update-deleted-section {
@@ -148,6 +166,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
     }
     .right {
       border-radius: 0 0 20px 0;
