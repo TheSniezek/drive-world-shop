@@ -418,7 +418,7 @@ const SectionManager: React.FC = () => {
       )}
       {isUpdateVisible && (
         <div className="update-section">
-          <div className="update-title">April 13, 2026 - Update 96</div>
+          <div className="update-title">April 13, 2026 - Update 97</div>
           {/* <div className="update-updated-section">
             <div className="update-updated section-tittle">UPDATED</div>
             <div className="update-updated">
@@ -430,10 +430,10 @@ const SectionManager: React.FC = () => {
           <div className="update-added-section">
             <div className="update-added section-tittle left">ADDED</div>
             <div className="update-added">
-              Bunny Pal ● Carbon Chrono ● Cavalier ● Couchmobile ● Honey Bee ● Manta CT3 ● Streiter
-              DLR
+              Bunny Pal ● Carbon Chrono ● Cavalier ● Couchmobile ● Fusion L20 ● Honey Bee ● Komachi
+              ● Manta CT3 ● Monster Galano ● Pyrrell ● Streiter DLR ● Taikyu Rally
             </div>
-            <div className="update-added count right">7 Cars</div>
+            <div className="update-added count right">12 Cars</div>
           </div>
           {/* <div className="update-deleted-section">
             <div className="update-deleted left section-tittle">DELETED</div>
