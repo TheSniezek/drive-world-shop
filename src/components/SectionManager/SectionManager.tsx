@@ -431,9 +431,9 @@ const SectionManager: React.FC = () => {
             <div className="update-added section-tittle left">ADDED</div>
             <div className="update-added">
               Bunny Pal ● Carbon Chrono ● Cavalier ● Couchmobile ● Fusion L20 ● Honey Bee ● Komachi
-              ● Manta CT3 ● Monster Galano ● Pyrrell ● Streiter DLR ● Taikyu Rally
+              ● Manta CT3 ● Monster Galano ● Pyrrell ● Streiter DLR ● Taikyu Rally ● Vandel
             </div>
-            <div className="update-added count right">12 Cars</div>
+            <div className="update-added count right">13 Cars</div>
           </div>
           {/* <div className="update-deleted-section">
             <div className="update-deleted left section-tittle">DELETED</div>

@@ -402,6 +402,7 @@ export const carImages: string[] = [
   'images/Vanaheim Evo.png',
   'images/Vandel Rally.png',
   'images/Vandel Widebody.png',
+  'images/Vandel.png',
   'images/Vanguard.png',
   "images/Vapore 'Patrol'.png",
   'images/Vapore.png',
