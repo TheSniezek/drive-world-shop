@@ -428,9 +428,9 @@ const SectionManager: React.FC = () => {
             <div className="update-updated count">8 Cars</div>
           </div> */}
           <div className="update-added-section">
-            <div className="update-added section-tittle left">ADDED</div>
+            <div className="update-added section-tittle ">ADDED</div>
             <div className="update-added">Carbon Prodigo ● Maestro ● Slipstream</div>
-            <div className="update-added count right">3 Cars</div>
+            <div className="update-added count ">3 Cars</div>
           </div>
           <div className="update-deleted-section">
             <div className="update-deleted left section-tittle">DELETED</div>
