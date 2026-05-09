@@ -418,7 +418,7 @@ const SectionManager: React.FC = () => {
       )}
       {isUpdateVisible && (
         <div className="update-section">
-          <div className="update-title">April 26, 2026 - Update 98</div>
+          <div className="update-title">May 09, 2026 - Update 99</div>
           {/* <div className="update-updated-section">
             <div className="update-updated section-tittle">UPDATED</div>
             <div className="update-updated">
@@ -429,18 +429,16 @@ const SectionManager: React.FC = () => {
           </div> */}
           <div className="update-added-section">
             <div className="update-added section-tittle left">ADDED</div>
-            <div className="update-added">Cherry Sunburst ● Rocket Kart ● Slipstream Evo</div>
+            <div className="update-added">Carbon Prodigo ● Maestro ● Slipstream</div>
             <div className="update-added count right">3 Cars</div>
           </div>
-          {/* <div className="update-deleted-section">
+          <div className="update-deleted-section">
             <div className="update-deleted left section-tittle">DELETED</div>
             <div className="update-deleted">
-              Trex Beast ● Beast ● Trex ● Stallion ● Stallion M ● Stallion M Race ● Stallion
-              Cabriolet ● Stallion Patrol ● Stallion350 ● Stallion500 ● Buck ● Buck Rally ● Focal RS
-              ● Rally RS
+              290 Boosted ● 290 RST ● 390 Renn ● Cyclone GT ● Project Strato ● Stratus ST ● Stratus ● X60S
             </div>
-            <div className="update-deleted right count">14 Cars</div>
-          </div> */}
+            <div className="update-deleted right count">8 Cars</div>
+          </div>
         </div>
       )}
       <div className="toolbar-header">
