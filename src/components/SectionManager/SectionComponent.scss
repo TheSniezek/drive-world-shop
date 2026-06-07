@@ -135,9 +135,16 @@
     position: absolute;
     display: inline-block;
     right: 5px;
-    max-width: 150px;
+    max-width: 160px;
     padding: 5px 10px;
     bottom: 57px;
     font-weight: 600;
+
+    &.serialless-label {
+      background-color: rgba(10, 10, 10);
+      color: var(--font);
+      cursor: default;
+      pointer-events: none;
+    }
   }
 }

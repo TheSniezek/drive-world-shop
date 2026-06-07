@@ -9,14 +9,33 @@ interface MenuProps {
     isSold: boolean;
     isReserv: boolean;
     isTV: boolean;
+    isSerialless: boolean;
+    name: string;
   };
   markAsSold: (index: number) => void;
   markAsReserved: (index: number) => void;
   markAsTV: (index: number) => void;
+  markAsSerialless: (index: number) => void;
   removeSection: (index: number) => void;
   handleCountChange: (index: number, newCount: number) => void;
   handleOptionSelect: (index: number, option: string) => void;
 }
+
+const SERIAL_CARS = [
+  'Epsilon Roadster',
+  'Verona Evo',
+  'Widow',
+  'Corsair',
+  'RB55 Evo',
+  'R299 GTR',
+  'Clover',
+  'Clover Evo',
+  'Oni',
+  'Rocket Kart',
+  'Carbon Prodigo',
+  'Trout XTreme',
+  'Sidewinder',
+];
 
 const Menu: React.FC<MenuProps> = ({
   index,
@@ -24,10 +43,13 @@ const Menu: React.FC<MenuProps> = ({
   markAsSold,
   markAsReserved,
   markAsTV,
+  markAsSerialless,
   removeSection,
   handleCountChange,
   handleOptionSelect,
 }) => {
+  const hasSerial = SERIAL_CARS.includes(section.name);
+
   return (
     <div className="menu">
       <button className="menu-button">☰</button>
@@ -96,6 +118,14 @@ const Menu: React.FC<MenuProps> = ({
         <button className="reserved-button menu-button" onClick={() => markAsReserved(index)}>
           {section.isReserv ? 'Not Reserved' : 'Reserved'}
         </button>
+        {hasSerial && (
+          <button
+            className={`serialless-button menu-button ${section.isSerialless ? 'serialless-active' : ''}`}
+            onClick={() => markAsSerialless(index)}
+          >
+            {section.isSerialless ? 'Serial' : 'Serialless'}
+          </button>
+        )}
         <button className="close-button menu-button" onClick={() => removeSection(index)}>
           Remove
         </button>

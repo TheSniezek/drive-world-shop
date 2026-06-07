@@ -10,6 +10,7 @@ interface SectionProps {
   markAsSold: (index: number) => void;
   markAsReserved: (index: number) => void;
   markAsTV: (index: number) => void;
+  markAsSerialless: (index: number) => void;
   removeSection: (index: number) => void;
   handleCountChange: (index: number, newCount: number) => void;
   handleTextChange: (e: React.ChangeEvent<HTMLInputElement>, index: number) => void;
@@ -27,6 +28,7 @@ const SectionComponent: React.FC<SectionProps> = ({
   markAsSold,
   markAsReserved,
   markAsTV,
+  markAsSerialless,
   removeSection,
   handleCountChange,
   handleCustomTextChange,
@@ -47,6 +49,7 @@ const SectionComponent: React.FC<SectionProps> = ({
           markAsSold={markAsSold}
           markAsReserved={markAsReserved}
           markAsTV={markAsTV}
+          markAsSerialless={markAsSerialless}
           removeSection={removeSection}
           handleCountChange={handleCountChange}
           handleOptionSelect={handleOptionSelect}
@@ -81,7 +84,9 @@ const SectionComponent: React.FC<SectionProps> = ({
             section.name === 'Carbon Prodigo' ||
             section.name === 'Trout XTreme' ||
             section.name === 'Sidewinder') &&
-            (isEditing ? (
+            (section.isSerialless ? (
+              <span className={`serial-number-input section-input serialless-label`}>Serialless</span>
+            ) : isEditing ? (
               <input
                 type="text"
                 placeholder="Serial"

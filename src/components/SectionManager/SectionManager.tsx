@@ -18,6 +18,7 @@ export interface Section {
   selectedOption: string;
   count: number;
   serial: string;
+  isSerialless: boolean;
 }
 
 const SectionManager: React.FC = () => {
@@ -78,6 +79,7 @@ const SectionManager: React.FC = () => {
         selectedOption: 'FS',
         count: 1,
         serial: '',
+        isSerialless: false,
       },
     ]);
   };
@@ -108,6 +110,12 @@ const SectionManager: React.FC = () => {
   const markAsTV = (index: number) => {
     const newSections = [...sections];
     newSections[index].isTV = !newSections[index].isTV;
+    setSections(newSections);
+  };
+
+  const markAsSerialless = (index: number) => {
+    const newSections = [...sections];
+    newSections[index].isSerialless = !newSections[index].isSerialless;
     setSections(newSections);
   };
 
@@ -292,6 +300,7 @@ const SectionManager: React.FC = () => {
             markAsSold={() => {}}
             markAsReserved={() => {}}
             markAsTV={() => {}}
+            markAsSerialless={() => {}}
             removeSection={() => {}}
             handleCountChange={() => {}}
             handleTextChange={() => {}}
@@ -428,9 +437,13 @@ const SectionManager: React.FC = () => {
             <div className="update-updated count">8 Cars</div>
           </div> */}
           <div className="update-added-section">
-            <div className="update-added section-tittle left">ADDED</div>
+            <div className="update-added section-tittle">ADDED</div>
             <div className="update-added">Ardente 'Classic' ● Bloxster Z 'Classic' ● Taikyu ● Taikyu GTR ● Trout ● Trout XTreme</div>
-            <div className="update-added  count right">6 Cars</div>
+            <div className="update-added  count">6 Cars</div>
+          </div>
+          <div className="site-changes-section">
+            <div className="site-changes section-tittle left">SITE CHANGES</div>
+            <div className="site-changes right">Added button "Serialless" for serial cars</div>
           </div>
           {/* <div className="update-deleted-section">
             <div className="update-deleted left section-tittle">DELETED</div>
@@ -501,6 +514,7 @@ const SectionManager: React.FC = () => {
                   markAsSold={markAsSold}
                   markAsReserved={markAsReserved}
                   markAsTV={markAsTV}
+                  markAsSerialless={markAsSerialless}
                   removeSection={removeSection}
                   handleCountChange={handleCountChange}
                   handleTextChange={handleTextChange}
