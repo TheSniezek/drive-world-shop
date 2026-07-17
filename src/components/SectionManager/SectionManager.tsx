@@ -427,7 +427,7 @@ const SectionManager: React.FC = () => {
       )}
       {isUpdateVisible && (
         <div className="update-section">
-          <div className="update-title">July 17, 2026 - Update 102</div>
+          <div className="update-title">July 17, 2026 - Update 103</div>
           {/* <div className="update-updated-section">
             <div className="update-updated section-tittle">UPDATED</div>
             <div className="update-updated">
