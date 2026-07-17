@@ -473,4 +473,5 @@ export const carImages: string[] = [
   'images/Zen 280X Evo.png',
   'images/Zen 530.png',
   'images/Zen 530 Evo.png',
+  'images/Aerial Summit.png',
 ];

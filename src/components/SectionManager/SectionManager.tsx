@@ -438,7 +438,7 @@ const SectionManager: React.FC = () => {
           </div> */}
           <div className="update-added-section">
             <div className="update-added section-tittle left">ADDED</div>
-            <div className="update-added">Akio Z ● Brick 260 ● Champman R ● Cyphisonia ● Manta CT6 ● Manta CT6 Evo ● R355 ● Summer Particle ● Zen 280X Evo ● Zen 530 ● Zen 530 Evo</div>
+            <div className="update-added">Aerial Summit ● Akio Z ● Brick 260 ● Champman R ● Cyphisonia ● Manta CT6 ● Manta CT6 Evo ● R355 ● Summer Particle ● Zen 280X Evo ● Zen 530 ● Zen 530 Evo</div>
             <div className="update-added  count right">11 Cars</div>
           </div>
           {/* <div className="site-changes-section">
