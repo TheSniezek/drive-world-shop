@@ -83,6 +83,7 @@ const SectionComponent: React.FC<SectionProps> = ({
             section.name === 'Rocket Kart' ||
             section.name === 'Carbon Prodigo' ||
             section.name === 'Trout XTreme' ||
+            section.name === 'Manta CT6 Evo' ||
             section.name === 'Sidewinder') &&
             (section.isSerialless ? (
               <span className={`serial-number-input section-input serialless-label`}>Serialless</span>
