@@ -427,20 +427,19 @@ const SectionManager: React.FC = () => {
       )}
       {isUpdateVisible && (
         <div className="update-section">
-          <div className="update-title">July 17, 2026 - Update 103</div>
-          {/* <div className="update-updated-section">
-            <div className="update-updated section-tittle">UPDATED</div>
+          <div className="update-title">July 23, 2026 - Update 104</div>
+          <div className="update-updated-section">
+            <div className="update-updated section-tittle left">UPDATED</div>
             <div className="update-updated">
-              Andromeda ● Arcane Evo ● Crescendo ● Fury ● Requiem ● Spectra ● Trident ● Trident
-              'Victory'
+              Name changes <a href="https://discord.com/channels/1007432760027250740/1076282206168813578/1529713805460766790">Link to Discord message about details</a>
             </div>
-            <div className="update-updated count">8 Cars</div>
-          </div> */}
-          <div className="update-added-section">
+            <div className="update-updated count right">34 Cars</div>
+          </div>
+          {/* <div className="update-added-section">
             <div className="update-added section-tittle left">ADDED</div>
             <div className="update-added">Aerial Summit ● Akio Z ● Brick 260 ● Champman R ● Cyphisonia ● Manta CT6 ● Manta CT6 Evo ● R355 ● Summer Particle ● Zen 280X Evo ● Zen 530 ● Zen 530 Evo</div>
             <div className="update-added  count right">11 Cars</div>
-          </div>
+          </div> */}
           {/* <div className="site-changes-section">
             <div className="site-changes section-tittle left">SITE CHANGES</div>
             <div className="site-changes right">Added button "Serialless" for serial cars</div>
