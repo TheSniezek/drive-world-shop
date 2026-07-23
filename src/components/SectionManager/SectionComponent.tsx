@@ -72,16 +72,16 @@ const SectionComponent: React.FC<SectionProps> = ({
             </div>
           )}
           {(section.name === 'Epsilon Roadster' ||
-            section.name === 'Verona Evo' ||
+            section.name === 'Spettra' ||
             section.name === 'Widow' ||
             section.name === 'Corsair' ||
             section.name === 'RB55 Evo' ||
-            section.name === 'R299 GTR' ||
+            section.name === 'Preciso GTR' ||
             section.name === 'Clover' ||
             section.name === 'Clover Evo' ||
             section.name === 'Oni' ||
             section.name === 'Rocket Kart' ||
-            section.name === 'Carbon Prodigo' ||
+            section.name === 'Prodigo' ||
             section.name === 'Trout XTreme' ||
             section.name === 'Manta CT6 Evo' ||
             section.name === 'Sidewinder') &&
