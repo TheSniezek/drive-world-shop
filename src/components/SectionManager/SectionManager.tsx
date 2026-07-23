@@ -431,7 +431,7 @@ const SectionManager: React.FC = () => {
           <div className="update-updated-section">
             <div className="update-updated section-tittle left">UPDATED</div>
             <div className="update-updated">
-              Name changes<a href="https://discord.com/channels/1007432760027250740/1076282206168813578/1529713805460766790"> Link to Discord message about details </a>(Must be in DW Server to be forwarded)
+              <span>Name changes<a href="https://discord.com/channels/1007432760027250740/1076282206168813578/1529713805460766790"> Link to Discord message about details </a>(Must be in DW Server to be forwarded)</span>
             </div>
             <div className="update-updated count right">34 Cars</div>
           </div>
